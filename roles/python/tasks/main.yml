@@ -3,6 +3,7 @@
   become: true
   pip:
     name: "{{item}}"
+    extra_args: --ignore-installed six
   with_items:
     - boto
     - boto3
