@@ -1,0 +1,16 @@
+---
+- hosts: local
+  tasks:
+    - git:
+        repo: "git@github.com:bentsolheim/{{item}}"
+        dest: "{{general.local_home}}/projects/bentsolheim/{{item}}"
+        update: yes
+      with_items:
+        - race-time-tracker-crawler
+        - race-time-tracker-api
+        - race-time-tracker-app
+        - race-time-tracker-infra
+        - mineresultater-import
+        - microbit-projects
+        - cloud-devserver
+
