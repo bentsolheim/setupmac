@@ -2,7 +2,7 @@
   register: st
   changed_when: false
 
-- get_url: url={{ font_url }} dest={{ fonts_dir }}/{{ font_filename }}
+- get_url: url={{ font_url }} dest={{ fonts_dir }}/{{ font_filename }} validate_certs=no
   when: not st.stat.exists
 
 - git:

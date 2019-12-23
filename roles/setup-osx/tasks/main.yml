@@ -2,13 +2,6 @@
   tags: dotfiles
   include: dotfiles.yml
 
-- name: getting downloads
-  tags: downloads
-  get_url:
-    url: "{{item.value.url}}"
-    dest: "{{item.value.dest}}"
-  with_dict: "{{downloads}}"
-
 # This task will fix an issue with IntelliJ being slow to start applications
 - name: hosts file
   tags: hostsfile

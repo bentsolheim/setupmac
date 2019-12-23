@@ -1,13 +1,7 @@
 ---
 - hosts: local
   roles:
-    - williamyeh.oracle-java
     - setup-osx
-    - sdkman
     - homebrew
-    - python
     - fish
     - terminal
-
-  vars:
-    java_version: 8

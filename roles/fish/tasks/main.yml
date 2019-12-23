@@ -7,11 +7,11 @@
   get_url:
     url: https://get.oh-my.fish
     dest: "{{general.local_home}}/Downloads/fish_install"
+    validate_certs: no
 
 - name: install oh-my-fish
   when: is_ohmyfish_installed.stdout == "no"
   shell: "fish {{general.local_home}}/Downloads/fish_install --noninteractive"
-  sudo: no
 
 - name: check if bobthefish is installed
   shell: test -d ~/.local/share/omf/themes/bobthefish && echo "yes" || echo "no"
@@ -20,7 +20,6 @@
 - name: install bobthefish
   when: is_bobthefish_installed.stdout == "no"
   shell: echo "omf install bobthefish" | fish
-  sudo: no
 
 - name: fish config
   copy:

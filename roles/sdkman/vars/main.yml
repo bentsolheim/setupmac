@@ -1,9 +1,0 @@
----
-sdkman:
-  install_url: http://get.sdkman.io
-  folder: "{{general.local_home}}/.sdkman"
-
-sdkman_applications:
-  - gradle
-  - maven
-  - groovy

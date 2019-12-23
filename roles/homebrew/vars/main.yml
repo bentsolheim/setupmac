@@ -16,7 +16,6 @@ applications:
 
 # homebrew cask applications
 cask_applications:
-  - google-chrome
   - docker
   - macvim
   - visual-studio-code 

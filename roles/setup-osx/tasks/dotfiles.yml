@@ -1,9 +1,4 @@
 ---
-- name: .profile file
-  copy:
-    src: dotfiles/mac/dot.profile
-    dest: "{{general.local_home}}/.profile"
-
 - name: .gitconfig file
   copy:
     src: dotfiles/dot.gitconfig

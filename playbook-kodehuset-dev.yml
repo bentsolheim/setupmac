@@ -3,7 +3,7 @@
   tasks:
     - git:
         repo: "git@github.com:kodehuset/{{item}}"
-        dest: "{{general.local_home}}/projects/{{item}}"
+        dest: "{{general.local_home}}/projects/Kodehuset/{{item}}"
         update: yes
       with_items:
         - here-main
