@@ -1,5 +1,0 @@
----
-- name: .profile file
-  copy:
-    src: dotfiles/ubuntu-tax/dot.profile
-    dest: "{{general.local_home}}/.profile"
